@@ -4,21 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>LANTERN // 01</title>
+  <title>LANTERN // 02</title>
 
   <style>
-    :root {
-      --night: #070808;
-      --ash: #c9c9c1;
-      --dim: #777;
-      --faint: #333;
-
-      --one: 17;
-      --two: 3;
-      --three: 14;
-      --four: 20;
-    }
-
     * {
       box-sizing: border-box;
     }
@@ -26,8 +14,8 @@
     body {
       margin: 0;
       min-height: 100vh;
-      background: var(--night);
-      color: var(--ash);
+      background: #070808;
+      color: #c9c9c1;
       font-family: Georgia, "Times New Roman", serif;
       display: flex;
       align-items: center;
@@ -50,9 +38,9 @@
     }
 
     h1 {
-      font-size: 48px;
+      font-size: 46px;
       font-weight: normal;
-      letter-spacing: 0.2em;
+      letter-spacing: 0.18em;
       margin: 0 0 35px;
     }
 
@@ -64,32 +52,41 @@
     }
 
     p {
-      color: var(--dim);
-      line-height: 1.8;
+      color: #777;
+      line-height: 1.9;
       font-size: 15px;
     }
 
     .numbers {
       margin-top: 55px;
       font-family: monospace;
+      font-size: 18px;
       color: #555;
-      letter-spacing: 0.3em;
+      letter-spacing: 0.4em;
     }
 
     .final {
       margin-top: 70px;
       font-family: monospace;
       font-size: 11px;
-      color: var(--faint);
+      color: #333;
+      letter-spacing: 0.15em;
     }
-
-    /*
-      Nothing important here.
-      The page is only what it appears to be.
-    */
 
     .ordinary {
       display: none;
+    }
+
+    /*
+      The obvious things are rarely the important things.
+    */
+
+    :root {
+      --signal-a: 4;
+      --signal-b: 15;
+      --signal-c: 18;
+      --signal-d: 5;
+      --signal-e: 6;
     }
   </style>
 </head>
@@ -99,23 +96,23 @@
   <main data-lantern="17">
 
     <div class="code">
-      LANTERN // 01
+      LANTERN // 02
     </div>
 
-    <h1>YOU FOUND THE DOOR.</h1>
+    <h1>THERE.</h1>
 
     <div class="line"></div>
 
     <p>
-      Most people stopped at the first message.
+      You found the first door.
     </p>
 
     <p>
-      You didn't.
+      But “there” is not a location.
     </p>
 
     <p>
-      The next signal is not written in words.
+      It is a direction.
     </p>
 
     <div class="numbers">
@@ -126,20 +123,22 @@
       THE SECOND DOOR IS CLOSER THAN IT LOOKS.
     </div>
 
-    <div class="ordinary"
-         data-a="4"
-         data-b="15"
-         data-c="18"
-         data-d="5"
-         aria-hidden="true">
+    <div
+      class="ordinary"
+      data-one="4"
+      data-two="15"
+      data-three="18"
+      data-four="5"
+      data-five="6"
+      aria-hidden="true">
     </div>
 
   </main>
 
-<!--
+  <!--
   ============================================================
+
   LANTERN // SECOND SIGNAL
-  ============================================================
 
   You looked below.
 
@@ -147,15 +146,17 @@
 
   But looking is not the same as seeing.
 
-  Four numbers are waiting.
+  Five numbers are waiting.
+
   They are not in the obvious place.
 
-  The page has four silent witnesses.
+  The page has five silent witnesses.
 
   Find them.
 
-  Four witnesses.
-  Four letters.
+  The five witnesses are letters.
+
+  Their order matters.
 
   They are not the destination.
 
@@ -163,5 +164,6 @@
 
   ============================================================
   -->
+
 </body>
 </html>
