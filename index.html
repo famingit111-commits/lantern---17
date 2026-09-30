@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>LANTERN // 17</title>
 
   <style>
@@ -10,16 +11,20 @@
       box-sizing: border-box;
     }
 
+    html {
+      background: #080909;
+    }
+
     body {
       margin: 0;
       min-height: 100vh;
-      background: #080909;
-      color: #d8d8d0;
+      background:
+        radial-gradient(circle at 50% 35%, #151717 0%, #080909 55%);
+      color: #d0d0c8;
       font-family: Georgia, "Times New Roman", serif;
       display: flex;
-      align-items: center;
       justify-content: center;
-      padding: 40px 20px;
+      padding: 70px 24px;
     }
 
     main {
@@ -29,16 +34,17 @@
 
     .title {
       font-family: monospace;
-      letter-spacing: 0.25em;
-      font-size: 14px;
-      color: #888;
-      margin-bottom: 50px;
+      font-size: 13px;
+      letter-spacing: 0.3em;
+      color: #666;
+      margin-bottom: 65px;
     }
 
     h1 {
       font-size: clamp(30px, 6vw, 58px);
       font-weight: normal;
-      letter-spacing: 0.08em;
+      line-height: 1.1;
+      letter-spacing: 0.04em;
       margin: 0 0 18px;
     }
 
@@ -50,51 +56,68 @@
 
     .warning {
       font-family: monospace;
+      font-size: 14px;
       color: #999;
-      margin-bottom: 35px;
+      margin-bottom: 38px;
     }
 
     .clues {
-      line-height: 1.9;
       font-size: 17px;
+      line-height: 1.9;
       color: #bdbdb5;
     }
 
+    .clues div {
+      margin: 2px 0;
+    }
+
     .numbers {
-      margin-top: 50px;
+      margin-top: 55px;
       font-family: monospace;
-      letter-spacing: 0.35em;
-      color: #777;
-    }
-
-    .final {
-      margin-top: 50px;
-      color: #666;
       font-size: 14px;
-      line-height: 1.7;
+      letter-spacing: 0.25em;
+      color: #666;
     }
 
-    .footer {
-      margin-top: 70px;
+    .message {
+      margin-top: 55px;
+      max-width: 520px;
+      color: #777;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    footer {
+      margin-top: 75px;
       font-family: monospace;
-      font-size: 11px;
-      color: #444;
+      font-size: 10px;
+      color: #3f3f3f;
     }
   </style>
 </head>
 
 <body>
+
   <main>
 
-    <div class="title">LANTERN // 17</div>
+    <div class="title">
+      LANTERN // 17
+    </div>
 
-    <h1>A signal for people who notice what others skip.</h1>
+    <h1>
+      A signal for people who notice what others skip.
+    </h1>
 
-    <div class="warning">
+    <div class="subtitle">
       Do not search for the loudest clue.
     </div>
 
+    <div class="warning">
+      The first message is hiding in plain sight.
+    </div>
+
     <div class="clues">
+
       <div>Rain arrived before the streetlights.</div>
       <div>Every window kept a different hour.</div>
       <div>After midnight, the station clock stopped.</div>
@@ -104,32 +127,44 @@
       <div>Look at the edges before the center.</div>
       <div>Only one detail is out of place.</div>
       <div>Where you begin matters.</div>
+
     </div>
 
     <div class="numbers">
       17 / 03 / 29 / 18 / 07 / 14
     </div>
 
-    <div class="final">
+    <div class="message">
       If you found this page without an invitation,
       you are already late.
     </div>
 
-    <div class="footer">
+    <footer>
       lantern17 — no accounts, no tracking, no real-world trespassing.
-    </div>
+    </footer>
 
   </main>
 
+
   <!--
-    LANTERN // INTERNAL
+  ============================================================
+  LANTERN // INTERNAL
+  ============================================================
 
-    The first door was never on the page.
+  If you are reading this, you looked below.
 
-    9 5 1 4  15 23
+  The clock does not run forward.
 
-    THE CLOCK DOES NOT RUN FORWARD.
-    17
+  03 18 05 11 22 09 05
+
+  17
+
+  Use the number above as the shift.
+
+  When the letters finally make sense,
+  use the result as the name of the next door.
+
+  ============================================================
   -->
 
 </body>
